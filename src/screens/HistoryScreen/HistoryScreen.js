@@ -3,7 +3,9 @@ import {View, Text, TextInput, Dimensions} from 'react-native'
 import LinearGradient from 'react-native-linear-gradient';
 import { DataTable } from 'react-native-paper';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-const HistoryScreen = () => {
+
+const HistoryScreen = ({navigation,route}) => {
+    const {his} = route.params;
     const {height, width} = Dimensions.get('window');
     return(
         <LinearGradient 
